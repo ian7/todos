@@ -1,0 +1,17 @@
+<!--<h1>Welcome#index</h1>
+><p>Find me in app/views/welcome/index.html.erb</p>-->
+<style type="text/css" media="screen">
+  h1 { text-align: center; margin: 10px;}
+  .netzke-component { width: 700px; margin: auto; }
+</style>
+<%= netzke :tasks, :class_name => "Basepack::GridPanel", 
+	:model => "User",
+	:columns => [:id, :email, :last_sign_in_at
+		],
+	  # Standard Ext.grid.EditorGridPanel configuration options:
+	  :border => true,
+	  :header => false,
+	  :view_config => {
+	    :force_fit => true # force the columns to occupy all the available width
+	  }
+	%>

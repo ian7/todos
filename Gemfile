@@ -6,6 +6,10 @@ gem 'netzke-core', :git => "git://github.com/skozlov/netzke-core.git"
 gem 'netzke-basepack', :git => "git://github.com/skozlov/netzke-basepack.git"
 gem 'will_paginate', '~>3.0.pre2'
 
+gem 'devise'
+gem 'omniauth'
+gem 'nifty-generators', '>= 0.4.0'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -33,3 +37,4 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "mocha", :group => :test

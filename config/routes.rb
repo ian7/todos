@@ -1,7 +1,14 @@
 Todos::Application.routes.draw do
   
-  get "welcome/index"
+  
+  devise_for :users
+  resources :authentications
+  resources :tasks
 
+  get "welcome/index"
+  get "welcome/users"
+  get "welcome/restful"
+  
    netzke
    root :to => "welcome#index"
   
