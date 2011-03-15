@@ -5,6 +5,7 @@ Todos::Application.routes.draw do
   resources :authentications
   resources :tasks
 
+  get "welcome/update"
   get "welcome/index"
   get "welcome/users"
   get "welcome/restful"

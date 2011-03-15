@@ -9,6 +9,7 @@ gem 'will_paginate', '~>3.0.pre2'
 gem 'devise'
 gem 'omniauth'
 gem 'nifty-generators', '>= 0.4.0'
+gem 'juggernaut'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

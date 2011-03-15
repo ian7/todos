@@ -14,3 +14,30 @@
     <div id="user-grid"></div> 
 </div> 
  
+<script src="http://localhost:8080/application.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+
+  window.WEB_SOCKET_SWF_LOCATION = "http://localhost:8080/WebSocketMain.swf"
+ var options = new Array();
+ //options['host']='juggernaut.sonyx.net';
+
+  var jug = new Juggernaut( options );
+  jug.subscribe("/chats", function(data){
+    var li = $("<li />");
+    li.text(data);
+    $("#chats").append(li);
+//	$("#whatever").append(data+"<br/>")alert
+	store.reload();
+  });  
+</script>
+
+
+ <% form_for Task.new, :url =>  {:action => 'update', :text => "asdfasdf"}, :remote => true do %>
+            <%= submit_tag "Add to Cart" %>
+        <% end %>
+
+<ul id="chats">
+	<li>first one</li>
+	<li />
+	</ul>
+	
